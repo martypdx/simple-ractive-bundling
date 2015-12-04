@@ -24,11 +24,13 @@ And then run:
 
 And gobble will prompt you to install the additional dependencies.
 
-Output is controlled via 1) the folder you specify as the last parameter of the `gobble` command (`dist` in the example above), and 2) the file name is set on line 42 of the `gobblefile.js`.
+## Settings
 
-You can also run:
+* Output is controlled via 1) the folder you specify as the last parameter of the `gobble` command (`dist` in the example above), and 2) the file name is set on line 42 of the `gobblefile.js`.
 
-## Inclusion
+* It assumes a folder named `components` with single-file ractive components. You can change the folder name on line 25 of the `gobblefile.js`.
+
+## Consuming the output
 
 Include the `bundle.js` after Ractive:
 
