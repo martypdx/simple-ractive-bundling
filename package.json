@@ -1,0 +1,17 @@
+{
+  "name": "simple-ractive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gobble build -f dist"
+  },
+  "author": "@martypdx",
+  "license": "MIT",
+  "devDependencies": {
+    "gobble-cli": "^0.6.0",
+    "gobble-concat": "^0.4.0",
+    "gobble-ractive": "^0.2.0",
+    "gobble-rollup": "^0.11.0"
+  }
+}

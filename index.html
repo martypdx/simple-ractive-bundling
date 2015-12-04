@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test bundling</title>
+</head>
+<body>
+
+<main></main>
+
+<script src='http://cdn.ractivejs.org/latest/ractive.min.js'></script>
+<script src='dist/bundle.js'></script>
+<script id='template' type='text/html'>
+	<h1>World of Pets</h1>
+	<pets/>
+</script>
+
+<script>
+	var ractive = new Ractive({
+		el: 'main',
+		template: '#template',
+		data: {
+			pets: [
+				{ name: 'Garfield', animal: 'cat' },
+				{ name: 'Tweety', animal: 'bird' },
+				{ name: 'Daffy', animal: 'duck' },
+			]
+		}
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<ul>
+	{{#each pets}}
+	<pet pet='{{this}}'/>
+	{{/each}}
+</ul>
+
+<style>
+
+ul {
+	list-style: none;
+	font-family: sans-serif;
+}
+
+</style>
+
+<script>
+component.exports = {
+	oninit () {
+		this.observe('pets', function(pets){
+			console.log('pets', pets);
+		})
+	}
+};
+</script>
